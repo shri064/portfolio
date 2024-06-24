@@ -1,0 +1,212 @@
+/* Custom Toast Styles */
+.Toastify__toast {
+  font-size: 15px; /* Smaller font size */
+  padding: 5px 8px; /* Adjust padding */
+  border-radius: 8px; /* Add border radius */
+  max-height: 40px; /* Maximum height */
+  min-height: auto; /* Remove minimum height */
+}
+
+.Toastify__toast-body {
+  margin: 0;
+  padding: 0; /* Remove extra padding */
+}
+
+.Toastify__progress-bar {
+  height: 2px; /* Smaller progress bar */
+}
+
+.Toastify__toast-icon {
+  width: 16px; /* Smaller icon size */
+  height: 16px;
+}
+
+.Toastify__close-button {
+  width: 16px; /* Smaller close button */
+  height: 16px;
+  font-size: 12px; /* Adjust font size for close button */
+}
+
+/* Existing styles */
+.contact_page_section {
+  background-color: #fff;
+  padding: 60px 0;
+}
+.contact_section {
+  width: 90%;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0px 0px 6px #9d9d9d;
+  border-radius: 10px;
+}
+.contact_page_section,
+.contact_section,
+.contact_container,
+.form_container_right,
+.form_container_left,
+.user_form,
+.user_send_msg_button,
+.submit_msg,
+.user_message_form h3,
+.user_message_form p,
+.contact_data_class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.contact_container,
+.contact_page_section,
+.user_form,
+.user_message_form,
+.your_info_data {
+  width: 100%;
+}
+
+.form_container_right {
+  width: 90%;
+  background: #ceb5ff;
+}
+
+.user_message_form {
+  padding: 42px 0;
+}
+.username_val,
+.user_msg,
+.name_val {
+  display: flex;
+  flex-direction: column;
+  margin: 9px;
+}
+input {
+  height: 45px;
+  line-height: 55px;
+}
+
+.submit_msg {
+  height: 45px;
+  width: 95%;
+  background: #b246f5;
+  border: 1px solid #9a24b9;
+  color: #fff;
+  margin: 15px 0 15px 0;
+  font-size: 18px;
+  font-weight: 500;
+  transition: ease-in-out 0.5s;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.submit_msg:active {
+  transform: scale(0.9);
+}
+input,
+textarea {
+  outline: none;
+  border: 1px solid #6a1b9a;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px 1px #bc96ff9e;
+  padding-left: 20px;
+}
+textarea {
+  padding-top: 12px;
+}
+label {
+  font-size: 15px;
+  font-weight: 600;
+}
+label,
+input {
+  margin-bottom: 9px;
+}
+.user_message_form span {
+  color: #9a24b9;
+  margin-left: 5px;
+}
+.user_message_form h3 {
+  font-size: 39px;
+}
+.user_message_form p {
+  font-size: 18px;
+}
+.contact_data_class {
+  gap: 10px;
+  margin: 15px 0 21px 0;
+  font-size: 18px;
+  font-family: inherit;
+  padding: 10px 21px;
+}
+.form_container_left {
+  width: 50%;
+}
+@media screen and (min-width: 1024px) {
+  .contact_page_section {
+    padding: 70px 0;
+  }
+  .contact_container {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-radius: 10px;
+    flex-direction: row-reverse;
+  }
+  .contact_section {
+    width: 1042px;
+  }
+  .user_form {
+    width: 80%;
+    margin-left: 17px;
+  }
+  .form_container_right {
+    background-size: cover;
+    width: 615px;
+    height: 600px;
+  }
+  .contact_data_class {
+    margin: 30px 0 30px 0;
+  }
+  .form_container_left .form_container_right {
+    width: 50%;
+  }
+
+  .your_info_data {
+    margin: 0 0 0 10px;
+  }
+
+  .contact_data_class {
+    gap: 14px;
+  }
+  .user_message_form h3,
+  .user_message_form p {
+    margin-left: 8px;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .form_container_right {
+    width: 100%;
+  }
+  .contact_container {
+    justify-content: space-evenly;
+    flex-direction: column-reverse;
+  }
+  .contact_section {
+    height: 100%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 720px) {
+  .form_container_left {
+    width: 90%;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .user_message_form h3,
+  .user_message_form p {
+    margin-left: 8px;
+    justify-content: flex-start;
+  }
+}
